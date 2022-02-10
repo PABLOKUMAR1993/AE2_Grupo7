@@ -88,8 +88,9 @@ public class Producto {
      */
 
     public double realesDos(double a, double b, double c) {
-        //TODO
-        return 0; //Devuelvo 0 para que no me de error al compilar.
+        double d;
+        d = a*b*c;
+        return d;
     }
 
     /**
@@ -110,8 +111,6 @@ public class Producto {
      */
 
     public int potencia(int base, int exponente) throws Exception {
-
-        // He tenido que resolverla para entender cómo funcionaba el error y poder devolver un throw.
 
         int resultado = base;
 

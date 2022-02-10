@@ -1,5 +1,7 @@
 /bin
+/out
 .classpath
 .project
-.idea
+/.idea
 AE2.iml
+.gitignore

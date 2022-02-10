@@ -33,8 +33,19 @@ public class Main {
         }
         public static void productoRealesDos() {
 
+            double a, b, c;
+            a = 3;
+            b = 5;
+            c = 7;
+
+            Producto p = new Producto();
+            System.out.println(p.realesDos(a, b, c));
+
         }
         public static void productoPotencia() {
+
+
+
         }
 
 }
