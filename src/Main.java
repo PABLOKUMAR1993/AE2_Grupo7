@@ -98,4 +98,21 @@ public class Main {
             System.out.println(resultado);
         }
 
+
+    /*
+     * CLASE SUMA:
+     */
+
+
+
+    /*
+     * CLASE RESTA:
+     */
+
+
+
+    /*
+     * CLASE DIVISIÓN:
+     */
+
 }
