@@ -42,9 +42,14 @@ public class Main {
             System.out.println(p.realesDos(a, b, c));
 
         }
-        public static void productoPotencia() {
+        public static void productoPotencia() throws Exception {
 
+            int base, exponente;
+            base = 2;
+            exponente = 3;
 
+            Producto p = new Producto();
+            System.out.println(p.potencia(base, exponente));
 
         }
 
