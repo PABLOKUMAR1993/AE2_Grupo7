@@ -46,8 +46,9 @@ public class Producto {
      */
 
     public double reales(double a, double b) {
-        //TODO
-        return 0; //Devuelvo 0 para que no me de error al compilar.
+        double c;
+        c = a*b;
+        return c;
     }
 
     /**

@@ -4,10 +4,30 @@ public class Main {
 
         public static void main(String[] args) throws Exception {
 
-            Producto p = new Producto(); //Una prueba que hice.
-            int potencia = p.potencia(2, 3);
-            System.out.println(potencia);
+            productoReales();
+            productoEnteros();
+            productoRealesDos();
+            productoPotencia();
 
+        }
+
+        public static void productoReales() {
+
+            double a, b;
+            a = 10;
+            b = 5;
+
+            Producto p = new Producto();
+            System.out.println(p.reales(a, b));
+
+        }
+        public static void productoEnteros() {
+
+        }
+        public static void productoRealesDos() {
+
+        }
+        public static void productoPotencia() {
         }
 
 }
