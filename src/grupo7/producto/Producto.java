@@ -64,8 +64,9 @@ public class Producto {
      */
 
     public int enteros(int a, int b) {
-        //TODO
-        return 0; //Devuelvo 0 para que no me de error al compilar.
+        int c;
+        c = a*b;
+        return c;
     }
 
     /**

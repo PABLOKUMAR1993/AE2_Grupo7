@@ -23,6 +23,13 @@ public class Main {
         }
         public static void productoEnteros() {
 
+            int a, b;
+            a = 10;
+            b = 5;
+
+            Producto p = new Producto();
+            System.out.println(p.enteros(a, b));
+
         }
         public static void productoRealesDos() {
 
