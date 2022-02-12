@@ -16,6 +16,19 @@ public class Suma {
 	}
 	
 	
+	
+	public int getAcumuladoSuma() {
+		return acumuladoSuma;
+	}
+
+
+
+	public void setAcumuladoSuma(int acumuladoSuma) {
+		this.acumuladoSuma = acumuladoSuma;
+	}
+
+
+
 	/* 1.Suma de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la solución. */ 
 	/**
 	 * Método que calcula la suma de dos números reales de tipo Double.
