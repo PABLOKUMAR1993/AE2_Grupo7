@@ -1,5 +1,5 @@
 import grupo7.producto.Producto;
-
+import grupo7.suma.Suma;
 public class Main {
 
         public static void main(String[] args) throws Exception {
@@ -11,6 +11,12 @@ public class Main {
             productoEnteros(SEPARADOR);
             productoRealesDos(SEPARADOR);
             productoPotencia(SEPARADOR);
+            
+            //Llamadas a procedimientos de la Clase Suma.
+            sumaDosReales(SEPARADOR);
+            sumaDosEnteros(SEPARADOR);
+            sumaTresFloat(SEPARADOR);
+            sumaAcumulado(SEPARADOR);
 
         }
 
@@ -104,7 +110,97 @@ public class Main {
      * CLASE SUMA:
      */
         
+        public static void sumaDosReales (String SEPARADOR) {
+        	System.out.println();
+        	System.out.println("------------------------------SUMA-----------------------------------");
+            //Variables 
+        	double resultado;
+        	double a, b;
+            a = 1.0;
+            b = 3.0;
+            
+            //Creacion de Objeto que recibe el método calculoSumaDosReales
+            Suma s = new Suma();
+            resultado = s.calculoSumaDosReales(a, b);
+            
+          
+            //Mostrar por la terminal.
+            System.out.println("\n");
+            System.out.println(SEPARADOR);
+            System.out.println("Primer metodo de Suma dos Reales (calculoSumaDosReales).");
+            System.out.println(SEPARADOR);
+            System.out.println("\n");
+            System.out.println(resultado);
+            
+        }
         
+        public static void sumaDosEnteros (String SEPARADOR) {
+
+        	//Variables
+        	double resultado;
+            int a, b;
+            a = 25;
+            b = 10;
+
+            //Creacion de Objeto que recibe el método calculoSumaDosEnteros
+            Suma s = new Suma();
+            resultado = s.calculoSumaDosEnteros(a, b);
+            
+          
+            //Mostrar por la terminal.
+            System.out.println("\n");
+            System.out.println(SEPARADOR);
+            System.out.println("Segundo metodo de Suma dos Enteros (calculoSumaDosEnteros).");
+            System.out.println(SEPARADOR);
+            System.out.println("\n");
+            System.out.println((double)resultado);
+               
+        }
+        
+        public static void sumaTresFloat (String SEPARADOR) {
+
+        	//Variables
+        	double resultado;
+            float a, b, c;
+            a = 25.8558F;
+            b = 4.258F;
+            c = 1.52665F;
+            		
+
+            //Creacion de Objeto que recibe el método calculoSumaTresFloat
+            Suma s = new Suma();
+            resultado = s.calculoSumaTresFloat(a, b, c);
+            
+          
+            //Mostrar por la terminal.
+            System.out.println("\n");
+            System.out.println(SEPARADOR);
+            System.out.println("Tercer metodo de Suma tres Float (calculoTresFloat).");
+            System.out.println(SEPARADOR);
+            System.out.println("\n");
+            System.out.println((double)resultado);
+               
+        }
+        
+        public static void sumaAcumulado (String SEPARADOR) {
+
+        	//Variable que imprime el resultado
+        	double resultado;
+        	
+        	//Creacion de Objeto que recibe el método getAcumuladoSuma
+            Suma s = new Suma();
+            resultado = s.getAcumuladoSuma();
+            	
+            
+            //Mostrar por la terminal el valor acumulado.
+            System.out.println("\n");
+            System.out.println(SEPARADOR);
+            System.out.println("Valor Acumulado de las sumas (valorAcumulado).");
+            System.out.println(SEPARADOR);
+            System.out.println("\n");
+            System.out.println((double) resultado);
+               
+        }
         
     /*
      * CLASE RESTA:

@@ -8,7 +8,7 @@ package grupo7.suma;
 
 public class Suma {
 	// Variables - Atributos
-	private int acumuladoSuma;
+	private static double acumuladoSuma;
 	
 	// Constructores
 	public Suma() {
@@ -17,16 +17,17 @@ public class Suma {
 	
 	
 	
-	public int getAcumuladoSuma() {
+	public double getAcumuladoSuma() {
 		return acumuladoSuma;
 	}
 
 
 
-	public void setAcumuladoSuma(int acumuladoSuma) {
-		this.acumuladoSuma = acumuladoSuma;
+	public void setAcumuladoSuma(double acumuladoSuma) {
+		Suma.acumuladoSuma = acumuladoSuma;
 	}
 
+	
 
 
 	/* 1.Suma de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la solución. */ 
@@ -38,6 +39,7 @@ public class Suma {
 	 */
 	public double calculoSumaDosReales (double a, double b){
 		double i = a + b;
+		acumuladoSuma = acumuladoSuma + i;
 		return i;
 	}
 
@@ -52,6 +54,7 @@ public class Suma {
 	 */
 	public int calculoSumaDosEnteros (int a, int b){
 		int i = a + b;
+		acumuladoSuma = acumuladoSuma + (double)i;
 		return i;
 	}
 	
@@ -63,8 +66,9 @@ public class Suma {
 	 * @param c es el tercer valor de la suma.
 	 * @return Devuelve la suma de los tres números como un Float.
 	 */
-	public float calculoSumaTresReales (float a, float b, float c) {
+	public float calculoSumaTresFloat (float a, float b, float c) {
 		float i = a + b + c;
+		acumuladoSuma = acumuladoSuma + (double)i;
 		return i;
 	}
 	
@@ -74,7 +78,7 @@ public class Suma {
 	 * @param a es el valor acumulado de una suma
 	 * @return el valor introducido por parámetro (a) lo almacena en la variable acumuladoSuma en la clase Suma.java.
 	 */
-	public int valorAcumulado (int a) {
+	public double valorAcumulado (double a) {
 		acumuladoSuma = a;
 		return acumuladoSuma;
 	}
