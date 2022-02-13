@@ -1,5 +1,5 @@
 
-import grupo7.division.ArithmeticException;
+import grupo7.division.Division;
 import grupo7.producto.Producto;
 import grupo7.resta.Resta;
 import grupo7.suma.Suma;
@@ -23,14 +23,14 @@ public class Main {
             sumaAcumulado(SEPARADOR);
 
             //Llamadas a procedimientos de la Clase Resta.
-            restaDosEnteros(SEPARADOR);
             restaDosReales(SEPARADOR);
+            restaDosEnteros(SEPARADOR);
             restaUnoOtro(SEPARADOR);
             restaValorAcumulado(SEPARADOR);
             
             //Llamadas a procedimientos de la Clase Division.
-            divisionDosEnteros(SEPARADOR);
             divisionDosReales(SEPARADOR);
+            divisionDosEnteros(SEPARADOR);
             inverso(SEPARADOR);
             raiz(SEPARADOR);
         }
@@ -40,6 +40,9 @@ public class Main {
         */
 
         public static void productoReales(String SEPARADOR) {
+            System.out.println(" ");
+            System.out.println("------------------------------PRODUCTO-----------------------------------");
+            System.out.println(" ");
 
             //Variables.
             double a, b, resultado;
@@ -109,7 +112,7 @@ public class Main {
 
             //Creación de Objeto.
             Producto p = new Producto();
-            resultado = p.producto(base, exponente);
+            resultado = p.potencia(base, exponente);
 
             //Mostrar por pantalla.
             System.out.println("\n");
@@ -134,7 +137,7 @@ public class Main {
             a = 1.0;
             b = 3.0;
             
-            //Creacion de Objeto que recibe el m�todo calculoSumaDosReales
+            //Creacion de Objeto que recibe el método calculoSumaDosReales
             Suma s = new Suma();
             resultado = s.calculoSumaDosReales(a, b);
             
@@ -142,7 +145,7 @@ public class Main {
             //Mostrar por la terminal.
             System.out.println("\n");
             System.out.println(SEPARADOR);
-            System.out.println("Primer metodo de Suma dos Reales (calculoSumaDosReales).");
+            System.out.println("Primer método de Suma dos Reales (calculoSumaDosReales).");
             System.out.println(SEPARADOR);
             System.out.println("\n");
             System.out.println(resultado);
@@ -157,7 +160,7 @@ public class Main {
             a = 25;
             b = 10;
 
-            //Creacion de Objeto que recibe el m�todo calculoSumaDosEnteros
+            //Creacion de Objeto que recibe el método calculoSumaDosEnteros
             Suma s = new Suma();
             resultado = s.calculoSumaDosEnteros(a, b);
             
@@ -165,7 +168,7 @@ public class Main {
             //Mostrar por la terminal.
             System.out.println("\n");
             System.out.println(SEPARADOR);
-            System.out.println("Segundo metodo de Suma dos Enteros (calculoSumaDosEnteros).");
+            System.out.println("Segundo método de Suma dos Enteros (calculoSumaDosEnteros).");
             System.out.println(SEPARADOR);
             System.out.println("\n");
             System.out.println((double)resultado);
@@ -182,7 +185,7 @@ public class Main {
             c = 1.52665F;
             		
 
-            //Creacion de Objeto que recibe el m�todo calculoSumaTresFloat
+            //Creacion de Objeto que recibe el método calculoSumaTresFloat
             Suma s = new Suma();
             resultado = s.calculoSumaTresFloat(a, b, c);
             
@@ -190,7 +193,7 @@ public class Main {
             //Mostrar por la terminal.
             System.out.println("\n");
             System.out.println(SEPARADOR);
-            System.out.println("Tercer metodo de Suma tres Float (calculoTresFloat).");
+            System.out.println("Tercer método de Suma tres Float (calculoTresFloat).");
             System.out.println(SEPARADOR);
             System.out.println("\n");
             System.out.println((double)resultado);
@@ -202,7 +205,7 @@ public class Main {
         	//Variable que imprime el resultado
         	double resultado;
         	
-        	//Creacion de Objeto que recibe el m�todo getAcumuladoSuma
+        	//Creacion de Objeto que recibe el método getAcumuladoSuma
             Suma s = new Suma();
             resultado = s.getAcumuladoSuma();
             	
@@ -210,7 +213,7 @@ public class Main {
             //Mostrar por la terminal el valor acumulado.
             System.out.println("\n");
             System.out.println(SEPARADOR);
-            System.out.println("Valor Acumulado de las sumas (valorAcumulado).");
+            System.out.println("Cuarto método. Valor Acumulado de las sumas (valorAcumulado).");
             System.out.println(SEPARADOR);
             System.out.println("\n");
             System.out.println((double) resultado);
@@ -220,7 +223,8 @@ public class Main {
     /*
      * CLASE RESTA:
      */
-        public double restaDosReales (String SEPARADOR) {
+
+        public static void restaDosReales (String SEPARADOR) {
         	System.out.println("\n");
         	System.out.println("------------------------------RESTA-----------------------------------");
             System.out.println("\n");
@@ -237,13 +241,13 @@ public class Main {
             //Mostrar en pantalla
             System.out.println("\n");
             System.out.println(SEPARADOR);
-            System.out.println("Primer metodo de Resta dos Reales (restaDosReales).");
+            System.out.println("Primer método de Resta dos Reales (restaDosReales).");
             System.out.println(SEPARADOR);
             System.out.println("\n");
-            System.out.println((double)resultado);
+            System.out.println(resultado);
         	}
         
-    	public int restaDosEnteros (String SEPARADOR) {
+    	public static void restaDosEnteros (String SEPARADOR) {
     		int a, b, resultado;
             a=4;
             b=2;
@@ -255,15 +259,15 @@ public class Main {
             //Mostrar en pantalla
             System.out.println("\n");
             System.out.println(SEPARADOR);
-            System.out.println("Segundo metodo de Resta dos Enteros (restaDosEnteros).");
+            System.out.println("Segundo método de Resta dos Enteros (restaDosEnteros).");
             System.out.println(SEPARADOR);
             System.out.println("\n");
             System.out.println((int)resultado);
         	}
     	
     	
-    	public double restaUnoOtro (double a, double b, double c) {
-    		int a, b, c,resultado;
+    	public static void restaUnoOtro (String SEPARADOR) {
+    		double a, b, c,resultado;
             a=8;
             b=2;
             c=3;
@@ -275,19 +279,19 @@ public class Main {
             //Mostrar en pantalla
             System.out.println("\n");
             System.out.println(SEPARADOR);
-            System.out.println("Tercer metodo de Resta un n�mero y luego otro (restaUnoOtro).");
+            System.out.println("Tercer método de Resta un número y luego otro (restaUnoOtro).");
             System.out.println(SEPARADOR);
             System.out.println("\n");
-            System.out.println((double)resultado);
+            System.out.println(resultado);
         	}
 
-    	public double restaValorAcumulado (double a) {
+    	public static void restaValorAcumulado (String SEPARADOR) {
         	//Variable
         	double resultado;
         	
         	//Creacion de Objeto 
-            Suma s = new Suma();
-            resultado = s.getAcumuladoResta();
+            Resta r = new Resta();
+            resultado = r.getAcumuladoResta();
             	
             
             //Mostrar en pantalla
@@ -296,14 +300,15 @@ public class Main {
             System.out.println("Valor Acumulado de las restas (restaValorAcumulado)");
             System.out.println(SEPARADOR);
             System.out.println("\n");
-            System.out.println((double) resultado);
+            System.out.println(resultado);
                
         }
+
     /*
      * CLASE DIVISION:
      */
 
-    	public double divisionDosReales (String SEPARADOR) throws ArithmeticException {
+    	public static void divisionDosReales (String SEPARADOR) throws ArithmeticException {
     		System.out.println(" ");
         	System.out.println("------------------------------DIVISION-----------------------------------");
             System.out.println(" ");
@@ -315,72 +320,69 @@ public class Main {
     		
             //Creacion de objeto
             Division d = new Division();
-            resultado = d.divisionDosReales();
+            resultado = d.divisionDosReales(a, b);
     		
             //Mostrar en pantalla
             System.out.println("\n");
             System.out.println(SEPARADOR);
-            System.out.println("Primer metodo de Division entre dos Reales (DivisionDosReales).");
+            System.out.println("Primer método de Division entre dos Reales (DivisionDosReales).");
             System.out.println(SEPARADOR);
             System.out.println("\n");
-            System.out.println((double)resultado);
+            System.out.println(resultado);
     	}
         
-    	public int divisionDosEnteros (String SEPARADOR) throws ArithmeticException {
+    	public static void divisionDosEnteros (String SEPARADOR) throws ArithmeticException {
     		//Variables
-            int a, b;
-            double resultado;
+            int a, b, resultado;
             a=10;
             b=2;            		
     		
             //Creacion de objeto
             Division d = new Division();
-            resultado = d.divisionDosEnteros();
+            resultado = d.divisionDosEnteros(a, b);
     		
             //Mostrar en pantalla
             System.out.println("\n");
             System.out.println(SEPARADOR);
-            System.out.println("Segundo metodo de Division entre dos enteros (DivisionDosEnteros).");
+            System.out.println("Segundo método de Division entre dos enteros (DivisionDosEnteros).");
             System.out.println(SEPARADOR);
             System.out.println("\n");
-            System.out.println((double)resultado);
+            System.out.println(resultado);
     		}
     	
-    	public int inverso (String SEPARADOR) {
+    	public static void inverso (String SEPARADOR) {
     		//Variables
-            int a;
-            double resultado;
-            a=10;            		
+            int a, resultado;
+            a = 10;
     		
-            //Creacion de objeto
+            //Creación de objeto
             Division d = new Division();
-            resultado = d.inverso();
+            resultado = d.inverso(a);
     		
             //Mostrar en pantalla
             System.out.println("\n");
             System.out.println(SEPARADOR);
-            System.out.println("Tercer metodo de Inverso de un n�mero entero (inverso).");
+            System.out.println("Tercer método de Inverso de un número entero (inverso).");
             System.out.println(SEPARADOR);
             System.out.println("\n");
-            System.out.println((double)resultado);
+            System.out.println(resultado);
     		}
         
-    	public double raiz (String SEPARADOR) {
+    	public static void raiz (String SEPARADOR) {
     		//Variables
-            int a;
-            double resultado;
-            a=9;            		
+            int a, resultado;
+            a = 9;
     		
             //Creacion de objeto
             Division d = new Division();
-            resultado = d.raiz();
+            resultado = (int) d.raiz(a);
     		
             //Mostrar en pantalla
             System.out.println("\n");
             System.out.println(SEPARADOR);
-            System.out.println("Cuarto metodo raiz cuadrada (raiz).");
+            System.out.println("Cuarto método raíz cuadrada (raíz).");
             System.out.println(SEPARADOR);
             System.out.println("\n");
-            System.out.println((double)resultado);
+            System.out.println(resultado);
     		}	
   }
