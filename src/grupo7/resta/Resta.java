@@ -13,6 +13,20 @@ package grupo7.resta;
  */
 
 public class Resta {
+	
+	// Variables 
+	private static double acumuladoResta;
+	
+	// Constructores
+	public int resta() {
+	}	
+	
+	public double getAcumuladoResta() {
+		return acumuladoResta;
+	}
+	public void setAcumuladoResta(double acumuladoResta) {
+		Resta.acumuladoResta = acumuladoResta;
+	}	
 		
 	// 1. Resta de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la solución.
 	
@@ -25,10 +39,10 @@ public class Resta {
 	 */
 	
 	public double restaDosReales (double a, double b) {
-		//TODO
-		return 0; //Devuelve 0 para evitar el error al compilar 	
+		double i = a - b;
+		acumuladoResta = acumuladoResta + 1;
+		return i;
 	}
-	
 	
 	
 	// 2. Resta de dos números enteros, tendrá 2 parámetros de entrada y uno de salida que será la solución.
@@ -42,8 +56,9 @@ public class Resta {
 	 */
 	
 	public int restaDosEnteros (int a, int b) {
-		//TODO
-		return 0; //Devuelve 0 para evitar el error al compilar 	
+		int i = a - b;
+		acumuladoResta = acumuladoResta+1;
+		return i; 
 	}
 	
 	
@@ -63,8 +78,9 @@ public class Resta {
 	 */
 		
 	public double restaUnoOtro (double a, double b, double c) {
-		//TODO
-		return 0; //Devuelve 0 para evitar el error al compilar 	
+		double i = a-b-c;
+		acumuladoResta = acumuladoResta+1;
+		return i; 	
 	}
 
 	
@@ -80,8 +96,8 @@ public class Resta {
 	 */
 	
 	public double restaValorAcumulado (double a) {
-		//TODO
-		return 0; //Devuelve 0 para evitar el error al compilar pero deberia devolver la Acumulación de la resta, que seria el siguiente minuendo.	
+		acumuladoResta = a;
+		return acumuladoResta;
 	}
 	
 }

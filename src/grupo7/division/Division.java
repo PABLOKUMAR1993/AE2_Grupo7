@@ -27,8 +27,8 @@ public class Division {
 	 */
 	
 	public double divisionDosReales (double a, double b) throws ArithmeticException {
-		//TODO
-		return 0; //Devuelve 0 para evitar el error al compilar 	
+		double i = a/b;
+		return i; 	
 	}
 	
 	
@@ -46,8 +46,8 @@ public class Division {
 	 */
 	
 	public int divisionDosEnteros (int a, int b) throws ArithmeticException {
-		//TODO
-		return 0; //Devuelve 0 para evitar el error al compilar 	
+		int i = a/b;
+		return i;
 	}
 	
 	
@@ -64,8 +64,8 @@ public class Division {
 	 */
 		
 	public int inverso (int a) {
-		//TODO
-		return 0; //Devuelve 0 para evitar el error al compilar 	
+		int i= 1/a;
+		return i;
 	}
 
 	
@@ -83,8 +83,7 @@ public class Division {
 	 */
 	
 	public double raiz (int a) {
-		//TODO
-		return 0; //Devuelve 0 para evitar el error al compilar 	
+		int i = (Math.sqrt(a));
+		return i; 	
 	}
-	
 }
