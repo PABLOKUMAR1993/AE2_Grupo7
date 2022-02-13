@@ -123,7 +123,6 @@ public class Main {
             System.out.println(resultado);
         }
 
-
     /*
      * CLASE SUMA:
      */
