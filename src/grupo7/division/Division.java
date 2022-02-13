@@ -51,7 +51,6 @@ public class Division {
 	}
 	
 	
-	
 	// 3. Inverso de un número real, tendrá un parámetro de entrada y uno de salida que será la solución.
 	
 	/**
