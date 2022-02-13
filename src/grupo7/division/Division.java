@@ -15,7 +15,6 @@ package grupo7.division;
 
 public class Division {
 	
-	
 	// 1. División de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la solución.
 	
 	/**
@@ -27,7 +26,7 @@ public class Division {
 	 * @throws arithmeticException el divisor nunca puede ser 0 porque dara error.
 	 */
 	
-	public double cocienteDosReales (double a, double b) throws ArithmeticException {
+	public double divisionDosReales (double a, double b) throws ArithmeticException {
 		//TODO
 		return 0; //Devuelve 0 para evitar el error al compilar 	
 	}
@@ -46,7 +45,7 @@ public class Division {
 	 * @throws arithmeticException el divisor nunca puede ser 0 porque dara error.
 	 */
 	
-	public int cocienteDosEnteros (int a, int b) throws ArithmeticException {
+	public int divisionDosEnteros (int a, int b) throws ArithmeticException {
 		//TODO
 		return 0; //Devuelve 0 para evitar el error al compilar 	
 	}

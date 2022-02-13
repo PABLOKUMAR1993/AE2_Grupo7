@@ -13,7 +13,7 @@ package grupo7.resta;
  */
 
 public class Resta {
-	
+		
 	// 1. Resta de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la solución.
 	
 	/**
