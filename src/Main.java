@@ -300,7 +300,6 @@ public class Main {
             System.out.println(SEPARADOR);
             System.out.println("\n");
             System.out.println(resultado);
-               
         }
 
     /*
