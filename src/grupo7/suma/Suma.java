@@ -24,10 +24,9 @@ public class Suma {
 
 
 	public void setAcumuladoSuma(double acumuladoSuma) {
-		Suma.acumuladoSuma = acumuladoSuma;
+		this.acumuladoSuma += acumuladoSuma;
 	}
 
-	
 
 
 	/* 1.Suma de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la solución. */ 
