@@ -14,7 +14,7 @@ class TestResta {
 	// Creamos el atributo rest de tipo Resta para invocar a los métodos de la clase Resta.
 	private Resta rest;
 	private Resta restAcum = new Resta();	
-
+	
 	@BeforeEach
 	void setUp() throws Exception {
 	//Creado este objeto antes de cada test para que esté siempre vacío
