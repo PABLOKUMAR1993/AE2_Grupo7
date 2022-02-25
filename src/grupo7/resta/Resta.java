@@ -15,7 +15,7 @@ package grupo7.resta;
 public class Resta {
 	
 	// Variables 
-	private static double acumuladoResta = 0;
+	private static double acumuladoResta;
 	
 	public double getAcumuladoResta() {
 		return acumuladoResta;

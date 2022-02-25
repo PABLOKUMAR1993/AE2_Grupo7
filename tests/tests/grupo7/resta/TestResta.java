@@ -26,95 +26,66 @@ class TestResta {
 	 **********************************/
 	
 	@Test
-	@DisplayName ("Resta dos numeros reales positivos")
+	@DisplayName ("Test Resta dos numeros reales positivos")
 	public void TestRestaDosReales() {	
 		// Resultados esperados método
 		double resultadoEsperado = 2.9;		
 		double resultadoObtenido = rest.restaDosReales(5.25, 2.35);		
-		assertEquals(resultadoEsperado, resultadoObtenido);
-		
-		// Resultados esperados Acumulados
-		double resultadoAcuEsperado =2.9;
-		double resultadoAcuObtenido = restAcum.getAcumuladoResta();
-		//assertEquals(resultadoAcuEsperado, resultadoAcuObtenido);			
+		assertEquals(resultadoEsperado, resultadoObtenido);	
 	}
 	
 	
 	@Test
-	@DisplayName ("Resta a un número positivo uno negativo")
+	@DisplayName ("Test Resta a un número positivo uno negativo")
 	public void TestRestaDosReales2() {	
 		// Resultados esperados método
 		double resultadoEsperado = 13.6;
 		double resultadoObtenido = rest.restaDosReales(10.33, -3.27);		
 		assertEquals(resultadoEsperado, resultadoObtenido);
-		
-		// Resultados esperados Acumulados
-		double resultadoAcuEsperado =0;
-		double resultadoAcuObtenido = restAcum.getAcumuladoResta();
-		//assertEquals(resultadoAcuEsperado, resultadoAcuObtenido);		
 	}
 	
 	
 	@Test
-	@DisplayName ("Resta dos numeros Reales iguales")
+	@DisplayName ("Test Resta dos numeros Reales iguales")
 	public void TestRestaDosReales3() {	
 		// Resultados esperados método
 		double resultadoEsperado = 0.0;
 		double resultadoObtenido = rest.restaDosReales(7.0, 7.0);		
 		assertEquals(resultadoEsperado, resultadoObtenido);
-		
-		// Resultados esperados Acumulados
-		double resultadoAcuEsperado =0;
-		double resultadoAcuObtenido = restAcum.getAcumuladoResta();
-		//assertEquals(resultadoAcuEsperado, resultadoAcuObtenido);			
 	}
+	
 	
 	/********************************** 
 	 * TEST MÉTODO restaDosEnteros
 	 **********************************/	
 	
 	@Test
-	@DisplayName ("Resta dos numeros enteros positivos")
+	@DisplayName ("Test Resta dos numeros enteros positivos")
 	public void TestRestaDosEnteros() {	
 		// Resultados esperados método
 		int resultadoEsperado = 3;		
 		int resultadoObtenido = rest.restaDosEnteros(5, 2);		
-		assertEquals(resultadoEsperado, resultadoObtenido);
-		
-		// Resultados esperados Acumulados
-		double resultadoAcuEsperado =0;
-		double resultadoAcuObtenido = restAcum.getAcumuladoResta();
-		//assertEquals(resultadoAcuEsperado, resultadoAcuObtenido);			
+		assertEquals(resultadoEsperado, resultadoObtenido);		
 	}
 	
 	
 	@Test
-	@DisplayName ("Resta a un número enteros uno negativo")
+	@DisplayName ("Test Resta a un número enteros uno negativo")
 	public void TestRestaDosEnteros2() {	
 		// Resultados esperados método
 		int resultadoEsperado = 13;
 		int resultadoObtenido = rest.restaDosEnteros(10, -3);		
-		assertEquals(resultadoEsperado, resultadoObtenido);
-		
-		// Resultados esperados Acumulados
-		double resultadoAcuEsperado =0;
-		double resultadoAcuObtenido = restAcum.getAcumuladoResta();
-		//assertEquals(resultadoAcuEsperado, resultadoAcuObtenido);		
+		assertEquals(resultadoEsperado, resultadoObtenido);	
 	}
 	
 	
 	@Test
-	@DisplayName ("Resta dos numeros enteros iguales")
+	@DisplayName ("Test Resta dos numeros enteros iguales")
 	public void TestRestaDosEnteros3() {	
 		// Resultados esperados método
 		int resultadoEsperado = 0;
 		int resultadoObtenido = rest.restaDosEnteros(7, 7);		
-		assertEquals(resultadoEsperado, resultadoObtenido);
-		
-		// Resultados esperados Acumulados
-		double resultadoAcuEsperado =0;
-		double resultadoAcuObtenido = restAcum.getAcumuladoResta();
-		//assertEquals(resultadoAcuEsperado, resultadoAcuObtenido);			
+	
 	}
 
 	
@@ -123,43 +94,45 @@ class TestResta {
 	 **********************************/	
 	
 	@Test
-	@DisplayName ("Resta tres numeros reales positivos")
+	@DisplayName ("Test Resta tres numeros reales positivos")
 	public void TestRestaTresReales() {	
 		// Resultados esperados método
 		double resultadoEsperado = 24.8;		
 		double resultadoObtenido = rest.restaUnoOtro(40.7, 5.7, 10.2);	
-		assertEquals(resultadoEsperado, resultadoObtenido);
-		
-		// Resultados esperados Acumulados
-		double resultadoAcuEsperado =0;
-		double resultadoAcuObtenido = restAcum.getAcumuladoResta();
-		//assertEquals(resultadoAcuEsperado, resultadoAcuObtenido);			
+		assertEquals(resultadoEsperado, resultadoObtenido);		
 	}
 	
-	@DisplayName ("Resta tres numeros reales el primero positivo y los dos siguientes negativos")
+	@Test
+	@DisplayName ("Test Resta tres numeros reales el primero positivo y los dos siguientes negativos")
 	public void TestRestaTresReales2() {	
 		// Resultados esperados método
-		double resultadoEsperado = 56.0;		
-		double resultadoObtenido = rest.restaUnoOtro(40.7, -5.7, -10.2);	
-		assertEquals(resultadoEsperado, resultadoObtenido);
-		
-		// Resultados esperados Acumulados
-		double resultadoAcuEsperado =0;
-		double resultadoAcuObtenido = restAcum.getAcumuladoResta();
-		//assertEquals(resultadoAcuEsperado, resultadoAcuObtenido);			
+		double resultadoEsperado = 55.5;		
+		double resultadoObtenido = rest.restaUnoOtro(40.1, -5.2, -10.2);	
+		assertEquals(resultadoEsperado, resultadoObtenido);	
 	}
 	
-	@DisplayName ("Resta tres numeros reales todos ellos negativos")
+	@Test
+	@DisplayName ("Test Resta tres numeros reales todos negativos")
 	public void TestRestaTresReales3() {	
 		// Resultados esperados método
-		double resultadoEsperado = 56.6;		
+		double resultadoEsperado = -24.8;		
 		double resultadoObtenido = rest.restaUnoOtro(-40.7, -5.7, -10.2);	
-		assertEquals(resultadoEsperado, resultadoObtenido);
+		assertEquals(resultadoEsperado, resultadoObtenido);			
+	}
+	
+	
+	/********************************** 
+	 * TEST MÉTODO valorAcumulado
+	 **********************************/		
+	@Test
+	@DisplayName ("Test Valor Acumulado Resta")
+	public void TestValorAcumulado() {	
 		
 		// Resultados esperados Acumulados
-		double resultadoAcuEsperado =0;
+		double resultadoAcuEsperado =82.10000000000001;
 		double resultadoAcuObtenido = restAcum.getAcumuladoResta();
-		//assertEquals(resultadoAcuEsperado, resultadoAcuObtenido);			
+		assertEquals(resultadoAcuEsperado, resultadoAcuObtenido);			
 	}
+	
 	
 }
