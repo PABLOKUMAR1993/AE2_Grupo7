@@ -36,7 +36,7 @@ public class Resta {
 	
 	public double restaDosReales (double minuendo, double sustraendo) {
 		double i = minuendo - sustraendo;
-		acumuladoResta = acumuladoResta + 1;
+		acumuladoResta = acumuladoResta + i;
 		return i;
 	}
 	
@@ -53,7 +53,7 @@ public class Resta {
 	
 	public int restaDosEnteros (int minuendo, int sustraendo) {
 		int i = minuendo - sustraendo;
-		acumuladoResta = acumuladoResta+1;
+		acumuladoResta = acumuladoResta + i;
 		return i; 
 	}
 	
@@ -75,7 +75,7 @@ public class Resta {
 		
 	public double restaUnoOtro (double minuendo, double sustraendo1, double sustraendo2) {
 		double i = minuendo-sustraendo1-sustraendo2;
-		acumuladoResta = acumuladoResta+1;
+		acumuladoResta = acumuladoResta + i;
 		return i; 	
 	}
 
@@ -95,6 +95,6 @@ public class Resta {
 		acumuladoResta = sustraendo;
 		return acumuladoResta;
 	}
-	
+		
 }
 
