@@ -7,27 +7,26 @@ package grupo7.suma;
  */
 
 public class Suma {
-	// Variables - Atributos
-	private static double acumuladoSuma;
 	
-	// Constructores
+	// Variables - Atributos
+	private static double acumuladoSuma = 0;
+	
+	//Constructores
+	
 	public Suma() {
-		super();
 	}
 	
-	
-	
+	//Guetters & Setters.
+
 	public double getAcumuladoSuma() {
 		return acumuladoSuma;
 	}
 
-
-
 	public void setAcumuladoSuma(double acumuladoSuma) {
-		this.acumuladoSuma += acumuladoSuma;
+		this.acumuladoSuma = acumuladoSuma;
 	}
 
-
+	//Métodos
 
 	/* 1.Suma de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la solución. */ 
 	/**
@@ -38,7 +37,6 @@ public class Suma {
 	 */
 	public double calculoSumaDosReales (double a, double b){
 		double i = a + b;
-		acumuladoSuma = acumuladoSuma + i;
 		return i;
 	}
 
@@ -53,7 +51,6 @@ public class Suma {
 	 */
 	public int calculoSumaDosEnteros (int a, int b){
 		int i = a + b;
-		acumuladoSuma = acumuladoSuma + (double)i;
 		return i;
 	}
 	
@@ -67,18 +64,17 @@ public class Suma {
 	 */
 	public float calculoSumaTresFloat (float a, float b, float c) {
 		float i = a + b + c;
-		acumuladoSuma = acumuladoSuma + (double)i;
 		return i;
 	}
 	
 	/* 4. Suma con valor acumulado, tendrá un parámetro de entrada y la clase deberá de guardar el valor acumulado. */
 	/**
-	 * Método que asigna el valor acumulado de una suma al atributo acumuladoSuma como tipo entero.
+	 * Método que asigna el valor acumulado de una suma al atributo acumuladoSuma como tipo real Double.
 	 * @param a es el valor acumulado de una suma
 	 * @return el valor introducido por parámetro (a) lo almacena en la variable acumuladoSuma en la clase Suma.java.
 	 */
 	public double valorAcumulado (double a) {
-		acumuladoSuma = a;
+		acumuladoSuma = acumuladoSuma + a;
 		return acumuladoSuma;
 	}
 	
