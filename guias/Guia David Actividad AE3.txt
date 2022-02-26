@@ -1,0 +1,7 @@
+- Al haber cambiado de ordenador he tenido que volver a configura Git y me creo la rama main. Cambio de rama a la Master y subo los cambios.
+- Creo los paquetes División y Resta dentro de la carpeta Test.
+- Implemento varias pruebas dependiendo del método, que quedan detalladas en los test.
+- En los campos que son double cuya ecuación da varios decimales he redondeado a sólo 2 decimales para poder tratar mejor los resultados del test.
+- Para el método invertir cambio los atributos a double para que el resultado no sea siempre cero y pueda comprobarse mejor el método.
+- He ido realizando diferentes pull/push según he ido avanzando en los test.
+- Todos los métodos funcionaron según se esperaba.
