@@ -349,7 +349,7 @@ public class Main {
     	
     	public static void inverso (String SEPARADOR) {
     		//Variables
-            int a, resultado;
+            double a, resultado;
             a = 10;
     		
             //Creación de objeto
