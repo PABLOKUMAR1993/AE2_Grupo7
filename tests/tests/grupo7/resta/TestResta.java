@@ -1,11 +1,9 @@
 package tests.grupo7.resta;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import grupo7.resta.*;
 
 
@@ -84,7 +82,8 @@ class TestResta {
 	public void TestRestaDosEnteros3() {	
 		// Resultados esperados método
 		int resultadoEsperado = 0;
-		int resultadoObtenido = rest.restaDosEnteros(7, 7);		
+		int resultadoObtenido = rest.restaDosEnteros(7, 7);
+		assertEquals(resultadoEsperado, resultadoObtenido);	
 	
 	}
 

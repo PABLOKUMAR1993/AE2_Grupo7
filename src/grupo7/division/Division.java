@@ -60,8 +60,8 @@ public class Division {
 	 * @return El <b>resultado</b> de dividir una unidad por el número introducido.
 	 */
 		
-	public int inverso (int numero) {
-		int i= 1/numero;
+	public double inverso (double numero) {
+		double i= 1/numero;
 		return i;
 	}
 
