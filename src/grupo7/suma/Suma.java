@@ -16,7 +16,7 @@ public class Suma {
 	public Suma() {
 	}
 	
-	//Guetters & Setters.
+	//Guetters & Setters
 
 	public double getAcumuladoSuma() {
 		return acumuladoSuma;
