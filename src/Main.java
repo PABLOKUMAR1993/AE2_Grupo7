@@ -5,9 +5,9 @@ import grupo7.suma.Suma;
 
 public class Main {
 
-        public static void main(String[] args) throws Exception {
-
-            final String SEPARADOR = "***************************************************";
+        public static void main (String[] args) throws Exception {
+        
+           final String SEPARADOR = "***************************************************";
 
             //Llamadas a procedimientos de la Clase Producto.
             productoReales(SEPARADOR);
