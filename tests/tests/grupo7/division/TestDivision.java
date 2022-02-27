@@ -122,7 +122,7 @@ class TestDivision {
 		 **********************************/
 		
 		@Test
-		@DisplayName ("Test Division inverso con un positivo")
+		@DisplayName ("Test Raiz con un positivo")
 		public void TestDivisionRaiz() {	
 			// Resultados esperados método
 			int resultadoEsperado = 3;		
@@ -132,7 +132,7 @@ class TestDivision {
 		
 		
 		@Test
-		@DisplayName ("Test Division inverso con un negativo")
+		@DisplayName ("Test Raiz con un negativo")
 		public void TestDivisionRaiz2() {	
 			// Resultados esperados método
 			double resultadoEsperado = 0;		

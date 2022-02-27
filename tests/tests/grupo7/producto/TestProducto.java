@@ -151,11 +151,18 @@ class TestProducto {
 	}
 	
 	@Test
-	@DisplayName ("Test potencia de un numero negativo")
+	@DisplayName ("Test potencia de un numero negativo elevado a un numero par")
 	public void testpotencia2 () throws Exception {
 		int resultadoObtenido= p.potencia(-3, 2);
 		int resultadoEsperado = 9;
 		assertEquals (resultadoObtenido, resultadoEsperado);
 	}
 
+	@Test
+	@DisplayName ("Test potencia de un numero negativo elevado a un numero impar")
+	public void testpotencia3 () throws Exception {
+		int resultadoObtenido= p.potencia(-3, 3);
+		int resultadoEsperado = -27;
+		assertEquals (resultadoObtenido, resultadoEsperado);
+	}
 }
